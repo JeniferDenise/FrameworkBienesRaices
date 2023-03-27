@@ -21,18 +21,21 @@ public class BienesRaicesPage {
     }
     @FindBy(xpath = "(//a[text()=\"Anuncios\"])")
     WebElement btnAnuncios;
-
-   // @FindBy(xpath = "//h3[contains(text(),\"Casa frente al bosque\")]")
-    //WebElement btnCasafrentealbosque;
    @FindBy(xpath = "//a[@class]")
    WebElement btnVerPropiedad;
 
+    @FindBy(xpath = "//a[contains (text (),\"Blog\")]")
+    WebElement btnVerBlog;
+
+    @FindBy(xpath = "//h4[contains(text(),'Construye una alberca en tu casa')]")
+    WebElement btnConstruyeUnaAlberca;
 
 
+
+    //Metodos para scenario:  Ver descripcion de Casa frente al bosque
     public void ir_Anuncios() throws InterruptedException {
          btnAnuncios.click();
         Thread.sleep(3000);
-
     }
 
     public void casafrentealbosque() throws InterruptedException {
@@ -43,5 +46,19 @@ public class BienesRaicesPage {
     public void validarUrl(){
         String urlActual = DriverContext.getDriver().getCurrentUrl();
         Assertions.assertEquals("https://dibrsite1.netlify.app/html/anuncio.html", urlActual);
+    }
+    //Metodos para scenario: Ver Consejos para tener una alberca
+    public void irABlog() throws InterruptedException {
+        btnVerBlog.click();
+        Thread.sleep(3000);
+    }
+    public void construyeUnaAlberca() throws InterruptedException {
+        Thread.sleep(3000);
+        btnConstruyeUnaAlberca.click();
+        Thread.sleep(3000);
+    }
+    public void validarUrl2(){
+        String urlActual = DriverContext.getDriver().getCurrentUrl();
+        Assertions.assertEquals("https://dibrsite1.netlify.app/html/entrada.html", urlActual);
     }
 }
