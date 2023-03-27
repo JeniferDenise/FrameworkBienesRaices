@@ -29,11 +29,26 @@ public class DriverManager {
             System.out.println("Se selecciona Chrome");
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("--remote-allow-origins=*");
+
+
             if (os.contains("linux")) {
                 System.out.println("entre a linux");
                 System.out.println(System.getProperty("user.name"));
             }
             WebDriverManager.chromedriver().setup();
+
+
+            chromeOptions.addArguments("--ignore-certificate-errors");
+            chromeOptions.addArguments("--disable-extensions");
+            chromeOptions.addArguments("--disable-dev-shm-usage");
+            chromeOptions.addArguments("--disable-gpu");
+            chromeOptions.addArguments("--no-sandbox");
+
+            if (os.contains("linux")) {
+               chromeOptions.addArguments("--headless");
+            }
+
+
 
             this.driver = (WebDriver) new ChromeDriver(chromeOptions);
             this.driver.manage().deleteAllCookies();
