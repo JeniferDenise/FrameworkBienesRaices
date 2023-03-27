@@ -1,0 +1,18 @@
+pipeline{
+	agent any
+
+		parameters{
+			string(name:'tag', description:'tag para ejecución de tarea gradle: ')
+		}
+		tools{
+			gradle 'gradle-7.6'
+		}
+		stages{
+			stage('runWithCucumber'){
+				steps{
+					sh 'gradle -q runWithCucumber -P tags=${tag}'
+				}
+			}
+		}
+
+}
