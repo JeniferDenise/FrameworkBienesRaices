@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.719">
+    <testcase classname="Busqueda de google, se esperar realizar e ingresar a una pagina utilizando el buscador de google." name="Busqueda google" time="11.461">
+        <failure message="Unable to establish websocket connection to http://localhost:62845/devtools/browser/0eb06787-214a-4efa-8b8e-8b7c9de43ad7&#10;Build info: version: '4.6.0', revision: '79f1c02ae20'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'&#10;Driver info: driver.version: ChromeDriver" type="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <![CDATA[Given Ingresar a google.....................................................skipped
+When introduzco la palabra "Tsoft"..........................................skipped
+And selecciono el resultado de la busqueda "Tsoft"..........................skipped
+Then se visualiza la pagina "https://www.tsoftglobal.com/"..................skipped
+
+StackTrace:
+org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:62845/devtools/browser/0eb06787-214a-4efa-8b8e-8b7c9de43ad7
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:265)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:70)
+	at driverConfig.DriverManager.resolveDriver(DriverManager.java:51)
+	at driverConfig.DriverContext.setUp(DriverContext.java:35)
+	at steps.Hooks.setUp(Hooks.java:27)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
