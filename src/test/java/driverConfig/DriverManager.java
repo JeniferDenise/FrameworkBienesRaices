@@ -37,7 +37,6 @@ public class DriverManager {
             }
             WebDriverManager.chromedriver().setup();
 
-
             chromeOptions.addArguments("--ignore-certificate-errors");
             chromeOptions.addArguments("--disable-extensions");
             chromeOptions.addArguments("--disable-dev-shm-usage");
@@ -47,8 +46,6 @@ public class DriverManager {
             if (os.contains("linux")) {
                chromeOptions.addArguments("--headless");
             }
-
-
 
             this.driver = (WebDriver) new ChromeDriver(chromeOptions);
             this.driver.manage().deleteAllCookies();
