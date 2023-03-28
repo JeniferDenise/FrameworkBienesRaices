@@ -11,8 +11,12 @@ pipeline{
 			stage('runWithCucumber'){
 				steps{
 					sh 'gradle -q runWithCucumber -P tags=${tag}'
-                    sh 'bash tarea.sh'
 				}
+			}
+			stage('reportes'){
+			    steps{
+			        sh 'bash tarea.sh'
+			    }
 			}
 		}
 
