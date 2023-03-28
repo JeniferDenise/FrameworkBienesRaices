@@ -4,12 +4,12 @@
       "id": "10000",
       "key": "IXR"
     },
-    "summary": "Proyecto Final BienesRaices Jeni",
+    "summary": "Proyecto Final Bienes Raices Jeni",
     "issuetype": {
       "name": "Test Execution"
     }
   },
   "xrayFields": {
-    "testPlanKey": "IXR-677"
+    "testPlanKey": "IXR-681"
   }
 }
