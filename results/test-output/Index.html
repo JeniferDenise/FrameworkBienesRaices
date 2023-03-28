@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Reporte Consorcio</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">mar. 21, 2023 05:30:25 p. m.</span></a>
+<a href="#"><span class="badge badge-primary">mar. 28, 2023 09:25:31 a. m.</span></a>
 </li>
 </ul>
 </div>
@@ -52,11 +52,6 @@
 <span class="ico"><i class="fa fa-list"></i></span>
 </a>
 </li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
-</a>
-</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -66,25 +61,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>mar. 21, 2023 05:30:25 p. m.</h3>
+<h3>mar. 28, 2023 09:25:31 a. m.</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>mar. 21, 2023 05:30:38 p. m.</h3>
+<h3>mar. 28, 2023 09:25:57 a. m.</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -100,12 +95,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> features passed
+<div><small data-tooltip='100%'>
+<b>1</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>1</b> features failed,
+<small data-tooltip='0%'><b>0</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -123,9 +118,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='100%'><b>1</b> scenarios failed,
+<small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -143,10 +138,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>8</b> steps passed</small></div>
 <div>
-<small data-tooltip='33%'><b>2</b> steps failed,
-<b>4</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -162,7 +157,7 @@
 </div></div>
 <script>
 var timeline = {
-"Busqueda de google, se esperar realizar e ingresar a una pagina utilizando el buscador de google.":11.366
+"Leer descripciones de propiedades":24.649
 };
 </script>
 <div class="row">
@@ -172,20 +167,12 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@google</td>
-<td>0</td>
+<td>@TEST_IXR-125</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>@tsoft</td>
 <td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0%</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -196,21 +183,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 1,
+passParent: 1,
+failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 0,
-failChild: 1,
+passChild: 1,
+failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 0,
-failGrandChild: 2,
+passGrandChild: 8,
+failGrandChild: 0,
 warningGrandChild: 0,
-skipGrandChild: 4,
+skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -224,7 +211,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -232,31 +219,31 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@google</a><a class="dropdown-item" href="#">@tsoft</a>
+<a class="dropdown-item" href="#">@TEST_IXR-125</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Busqueda de google, se esperar realizar e ingresar a una pagina utilizando el buscador de google.</p>
+            <p class="name">Leer descripciones de propiedades</p>
             <p class="text-sm">
-              <span>17:30:26</span> / <span>00:00:11:366</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>09:25:32</span> / <span>00:00:24:649</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Busqueda de google, se esperar realizar e ingresar a una pagina utilizando el buscador de google.</h5>
-<span class='badge badge-success'>03.21.2023 17:30:26</span>
-<span class='badge badge-danger'>03.21.2023 17:30:38</span>
-<span class='badge badge-default'>00:00:11:366</span>
+<h5 class="test-status text-pass">Leer descripciones de propiedades</h5>
+<span class='badge badge-success'>03.28.2023 09:25:32</span>
+<span class='badge badge-danger'>03.28.2023 09:25:56</span>
+<span class='badge badge-default'>00:00:24:649</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -268,62 +255,76 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Busqueda google</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Ver Consejos para tener una alberca</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
-              <div class="step fail-bg" title="BEFORE">
-                <span>steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
+              <div class="step pass-bg" title="steps.BackgroundBienesRaices.ingresoEnLaPagina(java.lang.String)">
+                <span>Given ingreso en la pagina "https://dibrsite1.netlify.app/html/anuncios.html"</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:62845/devtools/browser/0eb06787-214a-4efa-8b8e-8b7c9de43ad7
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
-	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
-	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
-	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
-	at java.base/java.util.Optional.map(Optional.java:265)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:70)
-	at driverConfig.DriverManager.resolveDriver(DriverManager.java:51)
-	at driverConfig.DriverContext.setUp(DriverContext.java:35)
-	at steps.Hooks.setUp(Hooks.java:27)
-</textarea>
-      
       </div>
               </div>
-              <div class="step skip-bg" title="steps.BackgroundGoogle.ingresarAGoogle()">
-                <span>Given Ingresar a google</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="steps.Google.introduzcoLaPalabra(java.lang.String)">
-                <span>When introduzco la palabra "Tsoft"</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="steps.Google.seleccionoElResultadoDeLaBusqueda(java.lang.String)">
-                <span>And selecciono el resultado de la busqueda "Tsoft"</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="steps.Google.seVisualizaLaPagina(java.lang.String)">
-                <span>Then se visualiza la pagina "https://www.tsoftglobal.com/"</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step fail-bg" title="AFTER">
-                <span>steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>steps.Hooks.capturarEvidencia()</span>
+      <div>[SUCCESS] Step ScreenShots
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='results/test-output/screenshots/embedded1.png' src="results/test-output/screenshots/embedded1.png">
+    
+    </div></div>
+</div>
       <div>
-        <textarea disabled class="code-block">java.lang.NullPointerException
-	at driverConfig.DriverContext.quitDriver(DriverContext.java:44)
-	at steps.Hooks.tearDown(Hooks.java:33)
-</textarea>
-      
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.BienesRaices.navegoHastaLaSeccionBlog()">
+                <span>When navego hasta la seccion Blog</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>steps.Hooks.capturarEvidencia()</span>
+      <div>[SUCCESS] Step ScreenShots
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='results/test-output/screenshots/embedded2.png' src="results/test-output/screenshots/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.BienesRaices.presionoBotonConstruyeUnaAlbercaEnTuCasa()">
+                <span>And presiono boton Construye una alberca en tu casa</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>steps.Hooks.capturarEvidencia()</span>
+      <div>[SUCCESS] Step ScreenShots
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='results/test-output/screenshots/embedded3.png' src="results/test-output/screenshots/embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.BienesRaices.visualizoDescripcionConsejosParaTenerUnaAlberca()">
+                <span>Then Visualizo descripcion Consejos para tener una alberca</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>steps.Hooks.capturarEvidencia()</span>
+      <div>[SUCCESS] Step ScreenShots
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='results/test-output/screenshots/embedded4.png' src="results/test-output/screenshots/embedded4.png">
+    
+    </div></div>
+</div>
+      <div>
       </div>
               </div>
           </div>
@@ -341,95 +342,7 @@ Driver info: driver.version: ChromeDriver
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">org.openqa.selenium.remote.http.ConnectionFailedException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>org.openqa.selenium.remote.http.ConnectionFailedException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:30:26 p. m.</td>
-<td>
-<a href="#" class="linked" test-id='1' id='3'>steps.Hooks.setUp(io.cucumber.java.Scenario)</a>
-<div class="">
-<span class="badge badge-default">Busqueda de google, se esperar realizar e ingresar a una pagina utilizando el buscador de google..Busqueda google.steps.Hooks.setUp(io.cucumber.java.Scenario)</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">java.lang.NullPointerException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>java.lang.NullPointerException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:30:38 p. m.</td>
-<td>
-<a href="#" class="linked" test-id='1' id='12'>steps.Hooks.tearDown(io.cucumber.java.Scenario)</a>
-<div class="">
-<span class="badge badge-default">Busqueda de google, se esperar realizar e ingresar a una pagina utilizando el buscador de google..Busqueda google.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div>        </div>
+        </div>
       </div>
     </div>
   </div>
