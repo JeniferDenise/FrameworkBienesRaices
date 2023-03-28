@@ -17,10 +17,10 @@
 
 		<protocol>https</protocol>
 		<!-- title of the document -->
-		<documentTitle>Reporte Consorcio</documentTitle>
+		<documentTitle>Reporte Jeni</documentTitle>
 		<!-- report name - displayed at top-nav -->
 
-		<reportName>Reporte Consorcio</reportName>
+		<reportName>Reporte Jeni</reportName>
 		
 		<!-- global date format override -->  <!-- defaults to yyyy-MM-dd -->
 		<dateFormat>dd-MM-yyyy</dateFormat>
