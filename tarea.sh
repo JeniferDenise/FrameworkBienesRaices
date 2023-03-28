@@ -16,6 +16,8 @@ export key=$(grep "IXR" peticion.txt | cut -d '"' -f 8)
 
 echo $key
 
+
+
 curl --location -g "https://integracionx-ray.atlassian.net/rest/api/3/issue/$key/attachments" \
 --header 'X-Atlassian-Token: no-check' \
 --header 'Authorization: Basic amVuaWZlci5lc3BlY2hlQHRzb2Z0bGF0YW0uY29tOkFUQVRUM3hGZkdGMGRsb0VFY1FpNkl1VENZcU5XdzdMV0lQSFd5SWxEMjRYdDhPbW9SSU1LQ1RZN1N4cHIxT2hHQlZacWpiNnFaTlk1c0NEOVcydlR2REJpUnlHeFduSTlTRDBCbjRGUTVCTDRlSTEwTkZMdU13dkNyR3dvNWJ6cV8xWEdtRU8xZ0xKTmMtRFZCcmJqOHhQZ0FRNW1fV2hJQTBtQ2tDVzhmTmgxMExwT24tY1d2OD1DREU2QUIzMQ==' \

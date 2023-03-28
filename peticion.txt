@@ -1,1 +1,1 @@
-{"error":"There are no valid tests imported"}
+{"id":"10688","key":"IXR-689","self":"https://integracionx-ray.atlassian.net/rest/api/2/issue/10688"}

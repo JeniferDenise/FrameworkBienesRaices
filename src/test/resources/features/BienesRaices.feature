@@ -1,6 +1,6 @@
 Feature: Leer descripciones de propiedades
 
-  @TEST_IXR-124
+  @TEST_IXR-681
 
   Scenario: Ver descripcion de Casa frente al bosque
     Given ingreso en la pagina "https://dibrsite1.netlify.app/html/anuncios.html"
@@ -8,7 +8,7 @@ Feature: Leer descripciones de propiedades
     And presiono boton ver propiedad Casa frente al bosque
     Then Visualizo descripcion
 
-  @TEST_IXR-125
+  @TEST_IXR-682
   Scenario: Ver Consejos para tener una alberca
     Given ingreso en la pagina "https://dibrsite1.netlify.app/html/anuncios.html"
     When navego hasta la seccion Blog
