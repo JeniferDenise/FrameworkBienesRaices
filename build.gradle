@@ -38,7 +38,7 @@ test {
 }
 
 
-task runWithCucumberforDebug() {
+task runWithCucumber() {
     dependsOn assemble, testClasses
     doLast {
         javaexec {
